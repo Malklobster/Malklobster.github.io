@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: contain;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAGFBMVEX/IYwhsf//2AD/Fo7/b2//3gD/2gCBvstQQlp1AAAA20lEQVR4nO3QSQGAMBAAsS1X/TuGUcEnkZAZAAAAAAAAAAAAAAAAAAAA4FcnczE3c+DAQRw4iAMHceAgDhzEgYM4cBAHDuLAQRw4iAMHceAgDhzEgYM4cBAHDuLAQRw4iAMHceAgDhzEgYM4cBAHDuLAQRw4iAMHceAgDhzEgYM4+A4eZjMLBw7iwEEcOIgDB3HgIA4cxIGDOHAQBw7iwEEcOIgDB3HgIA4cxIGDOHAQBw7iwEEcOIgDB3HgIA4cxIGDOHAQBw7iwEEcOIgDB3HgIA4cxIGDOFjrBZSs14BB7sCFAAAAAElFTkSuQmCC");
+}
+.second{
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR0AAACxCAMAAADOHZloAAAAGFBMVEXXAXAAOKlzT5XIGnhsUpd3UJQiPacOP6zbuoNJAAAA8ElEQVR4nO3QMQGDABAAsadA8e8YBX8zQyIhMwAAAAAAAAAAAAAAAAAAAAAAAAB81sluLnbzY2en2Cl2ip1ip9gpdoqdYqfYKXaKnWKn2Cl2ip1ip9gpdoqdYqfYKXaKnWKn2Cl2ip1ip9gpdoqdMje7+bObg52dYqfYKXaKnWKn2Cl2ip1ip9gpdoqdYqfYKXaKnWKn2Cl2ip1ip9gpdoqdYqfYKXaKnWKn2Cl2ip1ip9gpdoqdYqfYKXaKnWKn2Cl2ip1ip9gpdoqdYqfYKXaKnWKn2Cl2ip1ip9gpdoqdYqfYKXaKnWKn2Cl2yjzsXihasiEY9VpoAAAAAElFTkSuQmCC");
+}
+.dessert{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gay_flag.svg/261px-Gay_flag.svg.png");
+}
+.Asex{
+ background-image: url("https://s24193.pcdn.co/wp-content/uploads/2017/06/asexual-flag-ENTITY.png");
+}
+.Lesbian{
+ background-image: url("http://orig02.deviantart.net/20cd/f/2016/187/2/7/lesbian_by_pride_flags-d9c81eh.png");
+}
+
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>LGBTQ site</h1>
+<div class="first">
+  <p>Pansexual<span class="price"></span><br />
+  <small>not limited in sexual choice with regard to biological sex, gender, or gender identity. In simpler terms it means someone who is attracted to both male and female or dose not regard peoples sex/gender identy.</small></p>
+</div>
+
+<div class="second">
+  <p>Bisexual<span class="price"></span><br />
+  <small>sexually attracted not exclusively to people of one particular gender; attracted to both men and women. It is being attracted to men and women only </small></p>
+</div>
+  
+<div class="dessert">
+  <p>Gay<span class="price"></span><br />
+  <small>Gay means two men haveing a romantic attraction twords eachother.</small></p>
+</div>
+
+<div class="Asex">
+<p>A sexual<span class="price"></span><br />
+  <small>A sexual is someone who doesn't experience sexual attraction to any sex or gender at all. But this doesn't mean they can't experience romantic attraction which is a relationship which doesn't necessarily involve sex.  </small></p>
+  </div>
+  
+  <div class="Lesbian">
+<p>Lesbian<span class="price"></span><br />
+  <small>Lesbian means two women haveing a romantic attraction twords eachother 
+</small></p>
+</div>
+<button>></button>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+ $("button").on("click", function(){ 
+ location.replace("https://jsfiddle.net/wingedwolfchild/7p2Lf4wk/7/")
+ });
+</script>
+
+</body>
