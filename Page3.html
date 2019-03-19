@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: contain;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://ih1.redbubble.net/image.602424691.2859/flat,550x550,075,f.u1.jpg");
+}
+.second{
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAFVBMVEVbzvr1qbj///96yfH8p7T1prb5zdXCztQVAAAA/0lEQVR4nO3dwQmDAAAEwdMY+y85RSwihJkS9n1wGwAAAAAAAAAAADzhQ7CLYAeBfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfMm+BLsJdhLIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfY9yXWpYltcyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJfIl8iXyJf4iE18c+bvP2uDAAAAAAAAAAAwJ/6AQCjwcnpnQc/AAAAAElFTkSuQmCC");
+}
+.dessert{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Genderqueer_flag-pride.svg/1200px-Genderqueer_flag-pride.svg.png");
+}
+.Asex{
+ background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9d/Genderfluidity_Pride_Flag.png");
+}
+.Lesbian{
+ background-image: url("https://letsqueerthingsup.files.wordpress.com/2015/03/nbflag8.png?w=620");
+}
+
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>LGBTQ site</h1>
+<div class="first">
+  <p>Polyamorous<span class="price"></span><br />
+  <small>Polyamory (from Greek πολύ poly, "many, several", and Latin amor, "love") is the practice of, or desire for, intimate relationships with more than one partner, with the consent of all partners involved.</small></p>
+</div>
+
+<div class="second">
+  <p>Transgender<span class="price"></span><br />
+  <small>Someone who identafies as the oppsit gender from there birth gender.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>genderqueer<span class="price"></span><br />
+  <small>denoting or relating to a person who does not subscribe to conventional gender distinctions but identifies with neither, both, or a combination of male and female genders.</small></p>
+</div>
+
+<div class="Asex">
+<p>Genderfluid<span class="price"></span><br />
+  <small>denoting or relating to a person who does not identify themselves as having a fixed gender. They can be male one day and female another or none/both. </small></p>
+  </div>
+  
+  <div class="Lesbian">
+<p>Non binary<span class="price"></span><br />
+  <small> Non Binary Is when a person choses to identafy as neither male or female usialy taking on diffrent pronouns like xi, xir, xim, or zi, zir, zim. 
+</small></p>
+</div>
+<button><</button>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+ $("button").on("click", function(){ 
+ location.replace("https://jsfiddle.net/wingedwolfchild/4we7t0qo/3/show")
+ });
+ </script>
+</body>
