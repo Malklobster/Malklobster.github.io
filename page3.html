@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script src="/assets/jquery.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
 <style>
 body {
@@ -132,12 +132,17 @@ small {
 </div>
 <button><</button>
 <script>
-  var $j = jQuery.noConflict();
-  $j('div').on('click', function() {
+  originalOnload = window.onload;
+  window.onload = function() {
+  if (originalOnload) {
+    originalOnload();
+  }
+  $('div').on('click', function() {
       $(this).toggleClass('show-description');
   });
- $j("button").on("click", function(){ 
+ $("button").on("click", function(){ 
  location.replace("https://jsfiddle.net/wingedwolfchild/4we7t0qo/3/show")
  });
+};
  </script>
 </body>
