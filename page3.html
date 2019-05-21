@@ -132,10 +132,11 @@ small {
 </div>
 <button><</button>
 <script>
-  $('div').on('click', function() {
+  var $j = jQuery.noConflict();
+  $j('div').on('click', function() {
       $(this).toggleClass('show-description');
   });
- $("button").on("click", function(){ 
+ $j("button").on("click", function(){ 
  location.replace("https://jsfiddle.net/wingedwolfchild/4we7t0qo/3/show")
  });
  </script>
