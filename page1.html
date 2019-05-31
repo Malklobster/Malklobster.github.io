@@ -132,21 +132,18 @@ small {
 </div>
 <button>></button>
 <script>
+  originalOnload = window.onload;
+  window.onload = function() {
+  if (originalOnload) {
+    originalOnload();
+  }
   $('div').on('click', function() {
       $(this).toggleClass('show-description');
   });
  $("button").on("click", function(){ 
  location.replace("page3.html")
  });
-</script>
-  <button>HOME</button>
-<script>
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
- $("button").on("click", function(){ 
- location.replace("index.html")
- });
+};
 </script>
 
 </body>
